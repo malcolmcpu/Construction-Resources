@@ -2,7 +2,7 @@
 
 A simple front-end app for people in the trades. Enter a New York City zip code and see recent building permits in that area: where the work is happening, who the permit was granted to, and when.
 
-[Visit Construction Permits]()
+[Visit Construction Permits](https://malcolmcpu.github.io/Construction-Resources/)
 
 ## Project Preview
 
