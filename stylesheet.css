@@ -1,27 +1,50 @@
 body {
   text-align: center;
-  background: #f6f7f9;
-  color: #1f2933;
+  background: #131415;
+  color: rgb(141, 138, 138);
   padding: 3rem 1rem;
   font-family: 'Inter', sans-serif;
 }
 
+h1 {
+  font-family: 'Saira Stencil', sans-serif;
+  font-size: 3.5rem;
+  color: #fff;
+  margin-bottom: 0.5rem;
+}
+
+h2 {
+  font-size: 1.75rem;
+}
+
+h3 {
+  padding: 3rem 0 2rem 0;
+}
+
 input {
-  padding: 0.6rem 1rem;
+  padding: 0.8rem 1rem;
   width: 260px;
-  border: 1px solid #ddd;
+  background: #42474f;
+  color: white;
+  border: 2px solid #3a3f47;
   border-radius: 6px;
-  font: inherit;
+  font-family: 'Inter', sans-serif;
+  font-size: 17px;
 }
 
 button {
-  margin-top: 1rem;
-  padding: 0.5rem 1.5rem;
-  background: #2563eb;
-  color: #fff;
+  margin: 1rem 0 1.5rem 0;
+  padding: 0.5rem 2rem;
+  background: #f5b700;
+  color: #1b1d20;
   border: none;
-  border-radius: 5px;
+  border-radius: 6px;
   font-size: 15px;
+  font-weight: 600;
+}
+
+button:hover {
+  background: #ffc933;
 }
 
 #display-permits {
@@ -30,14 +53,31 @@ button {
   text-align: center;
 }
 
+#building-permits h2,
+#building-permits h3 {
+  margin: 0;
+  padding: 0 1.25rem;
+  text-align: left;
+  background: #2b2f36;
+  border: 1px solid #3a3f47;
+  border-left: 6px solid #f5b700;
+}
+
 #building-permits h2 {
-  margin: 1.5rem 0 0.25rem;
-  font-size: 1.5rem;
+  margin-top: 1.25rem;
+  padding-top: 1rem;
+  padding-bottom: 0.35rem;
+  font-size: 1.15rem;
+  color: white;
+  border-bottom: none;
+  border-radius: 8px 8px 0 0;
 }
 
 #building-permits h3 {
-  margin: 0;
-  font-size: 1rem;
+  padding-bottom: 1rem;
+  font-size: 0.9rem;
   font-weight: 400;
-  color: #667085;
+  color: #a9b0ba;
+  border-top: none;
+  border-radius: 0 0 8px 8px;
 }
