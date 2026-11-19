@@ -1,22 +1,44 @@
-# 🏗️ Project: Simple API 1 - Construction
+# 🚜 Construction Permits
 
-### Goal: Build a simple front-end app that displays data returned from an api that would be beneficial to someone in the trades (construction, hvac, plumbing, ect)
+A simple front-end app for people in the trades. Enter a New York City zip code and see recent building permits in that area: where the work is happening, who the permit was granted to, and when.
 
-### How to submit your code for review:
+[Visit Construction Permits]()
 
-- Fork and clone this repo
-- Create a new branch called answer
-- Checkout answer branch
-- Push to your fork
-- Issue a pull request
-- Your pull request description should contain the following:
-  - (1 to 5 no 3) I completed the challenge
-  - (1 to 5 no 3) I feel good about my code
-  - Anything specific on which you want feedback!
+## Project Preview
 
-Example:
-```
-I completed the challenge: 5
-I feel good about my code: 4
-I'm not sure if my constructors are setup cleanly...
-```
+![Construction Permits Screeenshot](./screens/construction-screengrab.png)
+
+## Features
+
+- Search building permits by NYC zip code
+- Each result shows the address, neighborhood, permit holder, and issue date
+- Results are displayed as bordered cards
+- Dark charcoal and safety-yellow themed
+
+## 🛠️Built With
+
+- HTML5
+- CSS3
+- JavaScript (vanilla ES6, using `fetch`)
+- [NYC Open Data](https://opendata.cityofnewyork.us/) building permits API
+- [Inter](https://fonts.google.com/specimen/Inter) from Google Fonts
+
+## How It Works
+
+1. You enter a zip code and click **Search**.
+2. `construction.js` sends a `fetch` request to the NYC Open Data permits endpoint.
+3. The JSON response is filtered down to the permits whose `zip_code` matches your input.
+4. For each match, the script creates a heading with the address and neighborhood and a subheading with the permit holder and date, then adds them to the page.
+
+## Ideas for Next Steps/Stretch Goals
+
+- Clear old results before each new search
+- Show a friendly message for empty results and errors
+- Format the issue date so it's easier to read
+- Add search by permit type or borough
+
+## 📚What I Learned
+
+- Fetching JSON from a public API with `fetch` and promises
+- Building page elements with `createElement` and `appendChild`
+- Styling dynamically created content with CSS
